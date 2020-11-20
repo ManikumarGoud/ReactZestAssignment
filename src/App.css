@@ -1,0 +1,62 @@
+p {
+  margin-left: 50px;
+  color: #272727;
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+  width: 73%;
+  table-layout: fixed;
+  margin: auto;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  
+}
+
+tr {
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px #ddd
+}
+
+#first_col {
+  width: 31%;
+  font-weight: 600;
+  color: #272727;
+}
+
+#second_col {
+  width: 60%;
+  color: #747474
+}
+
+tr td i {
+  position: relative;
+  left: 30px;
+  color: #ababab
+}
+
+h3 {
+  position: relative;
+  color: rgba(0, 0, 0, .3);
+  font-size: 2em
+}
+
+h3::before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  max-width: 7em;
+  white-space: nowrap;
+  color: #3498db;
+  animation: loading 13s linear;
+}
+
+@keyframes loading {
+  0% {
+    max-width: 0;
+  }
+}
